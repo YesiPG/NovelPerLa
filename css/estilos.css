@@ -10,6 +10,7 @@
     --color_blanco: #fff;
     --color_gris: #555;
     --color_negro: #000;
+    --fontSize_titulo: 3.3rem;
 }
 
 *,*::after,*::before{
@@ -28,11 +29,17 @@ html{
 /* -------------------------------|  BARRA DE NAVEGACIÓN  |------------------------- */
 
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
+    background-color: var(--color_blanco);
     align-items: center;
     padding: 1rem 3rem;
     box-shadow: 2px 4px 10px rgb(186, 184, 184);
+    z-index: 995;
 }
 
 .contLogo{
@@ -127,3 +134,25 @@ html{
     background-color: var(--color_amarillo);
     transition: background-color 1s ease-in;
 }
+
+/* -----------------------------|  SECCIÓN NOVELAS POPULARES  |--------------------------- */
+
+.main{
+    padding: 0 2rem;
+    padding-top: 8rem;
+    height: 100vh;
+}
+
+/* .novelPopular{
+    padding: 1rem;
+} */
+
+.Ptitulo{
+    font-family: var(--titulo);
+    font-size: var(--fontSize_titulo);
+    color: var(--color_amarillo);
+    text-align: center;
+    margin: 5rem 0;
+    
+}
+
