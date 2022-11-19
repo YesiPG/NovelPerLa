@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root{
+    --titulo: 'Playfair Display', serif;
+    --parrafo: 'Cormorant Garamond', serif;
+    --color_Azul: #4abdac;
+    --color_naranja: #fc4a1a;
+    --color_amarillo: #f7b733;
+    --color_plateado: #dfdce3;
+    --color_blanco: #fff;
+    --color_gris: #555;
+    --color_negro: #000;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+/* -------------------------------|  BARRA DE NAVEGACIÓN  |------------------------- */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    box-shadow: 2px 4px 10px rgb(186, 184, 184);
+}
+
+.contLogo{
+    display: flex;
+    align-items: center;
+}
+
+.imgLogo{
+    max-width: 100%;
+    width: 6rem;
+    animation-name: moverImgLogo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes moverImgLogo {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(20rem);
+    }
+}
+
+.logo{
+    font-family: var(--titulo);
+    font-size: 2.5rem;
+    color: var(--color_negro);
+}
+
+.contNav{
+    display: flex;
+    align-items: center;
+}
+
+.navInicio,
+.navJapon,
+.navChina,
+.navCorea{
+    margin: 0 1.5rem;
+    font-family: var(--parrafo);
+    font-size: 2rem;
+    color: var(--color_amarillo);
+    font-weight: 600;
+    padding: .5rem;
+}
+
+.navInicio:hover,
+.navJapon:hover,
+.navChina:hover,
+.navCorea:hover{
+    animation-name: moverNav;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moverNav {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(-15deg);
+    }
+}
+
+.imgDarkMode,
+.imgMenu{
+    width: 2rem;
+    pointer-events: none;
+}
+
+.btnDarkMode,
+.btnMenu{
+    cursor: pointer;
+    margin: 0 .5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .1);
+}
+.btnMenu{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btnDarkMode:hover,
+.btnMenu:hover{
+    background-color: var(--color_amarillo);
+    transition: background-color 1s ease-in;
+}
