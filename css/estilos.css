@@ -11,6 +11,7 @@
     --color_gris: #555;
     --color_negro: #000;
     --fontSize_titulo: 3.3rem;
+    --margin_titulo: 5rem 0;
 }
 
 *,*::after,*::before{
@@ -152,7 +153,85 @@ html{
     font-size: var(--fontSize_titulo);
     color: var(--color_amarillo);
     text-align: center;
-    margin: 5rem 0;
-    
+    margin: var(--margin_titulo);
 }
 
+.imgFlechaIzq, .imgFlechaDer{
+    pointer-events: none;
+}
+
+.btnFlechaIzq{
+    position: absolute;
+    top: 38rem;
+    left: 10%;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.btnFlechaDer{
+    position: absolute;
+    top: 38rem;
+    right: 10%;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.btnFlechaDer:hover,
+.btnFlechaIzq:hover{
+    background-color: var(--color_amarillo);
+    transition:  background-color 1s ease ;
+}
+
+.imgNP{
+    max-width: 100%;
+    width: 30rem;
+    height: 35rem;
+    object-fit: cover;
+}
+
+.nP{
+    position: absolute;
+    top: 23rem;
+    left: 15%;
+    right: 15%;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.npTitulo{
+    font-family: var(--titulo);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.nPgenero,.nPidioma,.nPsinopsis{
+    font-family: var(--parrafo);
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.linkNp{
+    display: inline-block;
+    font-family: var(--parrafo);
+    font-size: 2rem;
+    border-radius: .6rem ;
+    color: var(--color_negro);
+    background-color: var(--color_amarillo);
+    padding: .5rem 1.2rem;
+    margin-top: 1rem;
+}
+
+.linkNp:hover{
+    background-color: var(--color_naranja);
+    color: var(--color_blanco);
+    transition: all .3s ease-in ;
+}
+
+/* ---------------------|  SHOW  |----------------------------- */
+.nP_show{
+    opacity: 0;
+    pointer-events: none;
+}
