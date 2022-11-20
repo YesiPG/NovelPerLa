@@ -8,7 +8,7 @@
     --color_amarillo: #f7b733;
     --color_plateado: #dfdce3;
     --color_blanco: #fff;
-    --color_gris: #555;
+    --color_gris: #444;
     --color_negro: #000;
     --fontSize_titulo: 3.3rem;
     --margin_titulo: 5rem 0;
@@ -234,4 +234,14 @@ html{
 .nP_show{
     opacity: 0;
     pointer-events: none;
+}
+
+.temaFondo{
+    background-color: var(--color_gris);
+}
+.temaLetra{
+    color: var(--color_plateado);
+}
+.temaH{
+    background-color: var(--color_negro);
 }

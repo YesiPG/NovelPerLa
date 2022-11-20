@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-darkMode="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body data-darkMode="">
     
     <header class="header">
         <div class="contLogo">
             <img class="imgLogo" src="images/books.png" alt="logo libro">
-            <h2 class="logo">NovelPerLa</h2>
+            <h2 class="logo" data-darkModeLetra="">NovelPerLa</h2>
         </div>
         <nav class="contNav">
             <a class="navInicio" href="index.html">Inicio</a>
@@ -31,7 +31,7 @@
     </header>
     
     <main class="main">
-        <section class="novelPopular">
+        <section class="novelPopular" data-darkModeLetra="">
 
             <h1 class="Ptitulo">Novelas Populares</h1>
 
@@ -115,5 +115,8 @@
         </section>
     </main>
 
+
+    <!-- SCRIPTS -->
+    <script src="js/darkMode.js"></script>
 </body>
 </html>
