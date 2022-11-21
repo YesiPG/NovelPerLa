@@ -199,6 +199,8 @@ html{
     display: grid;
     grid-auto-flow: column;
     gap: 3em;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .npTitulo{
@@ -307,8 +309,9 @@ html{
 
 /* ---------------------|  SHOW  |----------------------------- */
 .nP_show{
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 1s ease-in-out;
 }
 
 .temaFondo{
