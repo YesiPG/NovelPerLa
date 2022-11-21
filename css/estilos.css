@@ -328,6 +328,52 @@ html{
     transition: background-color 1s ease;
 }
 
+/* ----------------------------------|  PREGUNTAS  |--------------------------------- */
+.preguntas{
+    margin: 5rem 10rem;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2em;
+}
+
+.pQueEsNovela{
+    border-radius: 6px;
+    padding: 2rem;
+    box-shadow: 2px 4px 10px rgb(186, 184, 184);
+
+}
+
+.tituloPg{
+    font-family: var(--titulo);
+    font-size: var(--fontSize_titulo);
+    text-align: center;
+    color: var(--color_amarillo);
+    margin: 2rem 0;
+}
+
+.pregunta1, .pregunta2{
+    font-family: var(--titulo);
+    font-size: 2rem;
+    color: var(--color_amarillo);
+    margin-bottom: 2.5rem;
+}
+
+.parrafoPregunta{
+    font-family: var(--parrafo);
+    font-size: 1.8rem;
+}
+
+.imgPreguntas{
+    pointer-events: none;
+}
+
+.btnPreguntas{
+    position: relative;
+    top: 2rem;
+    right: 2rem;
+}
+
+
 /* ---------------------|  SHOW  |----------------------------- */
 .nP_show{
     opacity: 1;
