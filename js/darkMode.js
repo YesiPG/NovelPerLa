@@ -6,15 +6,16 @@
     const imgDarkMode = d.querySelector(".imgDarkMode");
     const imgMenu = d.querySelector(".imgMenu");
     const header = d.querySelector(".header");
-    const fondo = d.querySelectorAll("[data-darkMode]");
+    const fondoGris = d.querySelectorAll("[data-darkMode]");
+    const fondoNegro = d.querySelectorAll("[data-darkMode2]");
     const colorLetra = d.querySelectorAll("[data-darkModeLetra]");
 
     const temaOscuro = ()=>{
         console.log("hola"); 
 
-        fondo.forEach(e => e.classList.add("temaFondo"));
+        fondoGris.forEach(e => e.classList.add("temaFondo"));
+        fondoNegro.forEach(e => e.classList.add("temaH"));
         colorLetra.forEach(e => e.classList.add("temaLetra"));
-        header.classList.add("temaH");
 
         imgDarkMode.removeAttribute("src");
         imgDarkMode.setAttribute("src","images/sun.svg");
@@ -28,7 +29,8 @@
     const temaClaro = ()=>{
         console.log("hola2"); 
 
-        fondo.forEach(e => e.classList.remove("temaFondo"));
+        fondoGris.forEach(e => e.classList.remove("temaFondo"));
+        fondoNegro.forEach(e => e.classList.remove("temaH"));
         colorLetra.forEach(e => e.classList.remove("temaLetra"));
         header.classList.remove("temaH");
 
