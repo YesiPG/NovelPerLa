@@ -25,6 +25,7 @@
 
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 /* -------------------------------|  BARRA DE NAVEGACIÓN  |------------------------- */
@@ -305,6 +306,26 @@ html{
     font-family: var(--parrafo);
     font-size: 1.9rem;
     color: var(--color_negro);
+}
+
+.imgFlechaUp{
+    pointer-events: none;
+}
+
+.btnFlechaUp{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 800;
+}
+
+.btnFlechaUp:hover{
+    background-color: var(--color_amarillo);
+    transition: background-color 1s ease;
 }
 
 /* ---------------------|  SHOW  |----------------------------- */
