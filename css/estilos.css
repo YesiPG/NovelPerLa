@@ -203,6 +203,7 @@ html{
     gap: 3em;
     opacity: 0;
     pointer-events: none;
+    margin-bottom: 2rem;
 }
 
 .npTitulo{
@@ -237,7 +238,7 @@ html{
 /* -------------------------|  SECCIÓN LISTA DE NOVELAS  |------------------------- */
 .Ltitulo{
     font-family: var(--titulo);
-    margin-top: 50rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
     font-size: var(--fontSize_titulo);
     color: var(--color_amarillo);
@@ -245,6 +246,7 @@ html{
 }
 
 .contLista{
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -389,12 +391,15 @@ html{
 /* ---------------------------------| FOOTER  |------------------------------------- */
 
 .footer{
-    
-    left: 0;
-    right: 0;
-    bottom: 0;
     padding: 2rem;
-    background-color: #000;
+    background-color: var(--color_gris);
+}
+
+.Ftitulo{
+    text-align: center;
+    font-family: var(--parrafo);
+    font-size: 1.5rem;
+    color: var(--color_plateado);
 }
 
 /* ---------------------|  SHOW  |----------------------------- */
