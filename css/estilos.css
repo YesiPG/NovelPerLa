@@ -140,6 +140,7 @@ html{
 /* -----------------------------|  SECCIÓN NOVELAS POPULARES  |--------------------------- */
 
 .main{
+    position: relative;
     padding: 0 2rem;
     padding-top: 8rem;
     height: 100vh;
@@ -330,17 +331,20 @@ html{
 
 /* ----------------------------------|  PREGUNTAS  |--------------------------------- */
 .preguntas{
+    position: relative;
     margin: 5rem 10rem;
     display: grid;
     grid-auto-flow: row;
     gap: 2em;
 }
 
-.pQueEsNovela{
+.pQueEsNovela1, .pQueEsNovela2{
     border-radius: 6px;
     padding: 2rem;
     box-shadow: 2px 4px 10px rgb(186, 184, 184);
-
+    height: 7rem;
+    overflow: hidden;
+    transition: height 1s ease;
 }
 
 .tituloPg{
@@ -355,7 +359,7 @@ html{
     font-family: var(--titulo);
     font-size: 2rem;
     color: var(--color_amarillo);
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
 }
 
 .parrafoPregunta{
@@ -365,20 +369,49 @@ html{
 
 .imgPreguntas{
     pointer-events: none;
+    transform: rotate(0);
+    transition: transform 1s ease-in;
 }
 
-.btnPreguntas{
-    position: relative;
-    top: 2rem;
+.btnPregunta1,.btnPregunta2{
+    position: absolute;
     right: 2rem;
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
 }
 
+.btnPregunta1:hover, .btnPregunta2:hover{
+    background-color: var(--color_amarillo);
+    transition: background-color .5s ease;
+}
+
+/* ---------------------------------| FOOTER  |------------------------------------- */
+
+.footer{
+    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    background-color: #000;
+}
 
 /* ---------------------|  SHOW  |----------------------------- */
 .nP_show{
     opacity: 1;
     pointer-events: unset;
     transition: opacity 1s ease-in-out;
+}
+
+.pQueEsNovela_show{
+    height: 19rem;
+    transition: height 1s ease; 
+}
+
+.imgPreguntas_show{
+    transform: rotate(180deg);
+    transition: transform 1s ease-in;
 }
 
 .temaFondo{
