@@ -492,3 +492,30 @@ html{
     }
 
 }
+
+@media screen and (max-width: 800px){
+    .nP{
+        grid-auto-flow: row;
+    }
+    .imgNP{
+        width: 24rem;
+        margin: auto;
+    }
+
+    .btnFlechaIzq,.btnFlechaDer{
+        top: 55rem;
+    }
+
+    .Ltitulo{
+        margin-top: 40rem;
+    }
+
+    .listaCard{
+        width: 30rem;
+        height: 37rem;
+    }
+
+    .pregunta1, .pregunta2{
+        font-size: 1.7rem;
+    }
+}
