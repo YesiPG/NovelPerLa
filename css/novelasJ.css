@@ -1,0 +1,10 @@
+
+.mainJ{
+    padding: 8rem 2rem;
+}
+
+@media screen and (max-width: 800px){
+    .Jtitulo{
+        margin-top: 5rem;
+    }
+}
