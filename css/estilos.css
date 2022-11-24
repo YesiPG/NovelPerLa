@@ -518,4 +518,106 @@ html{
     .pregunta1, .pregunta2{
         font-size: 1.7rem;
     }
+    .pQueEsNovela_show{
+        height: 26rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .nPgenero,.nPidioma,.nPsinopsis{
+        font-size: 1.8rem;
+    }
+
+    .listaCard{
+        width: 36rem;
+        height: 41rem;
+    }
+
+    .imgLista{
+        width: 27rem;
+        height: 32rem; 
+    }
+
+    .preguntas{
+        margin: 5rem 5rem;
+    }    
+    
+
+    .Ltitulo{
+        margin-top: 47rem;
+    }
+
+    .btnFlechaIzq{
+        left: 4%;
+    }
+    .btnFlechaDer{
+        right: 4%;
+    }
+
+    .pregunta1, .pregunta2{
+        font-size: 1.8rem;
+    }
+
+    .pQueEsNovela_show{
+        height: 30rem;
+    }
+
+}
+
+
+@media screen and (max-width: 400px){
+    .header{
+        padding: 1rem 2rem;
+    }
+
+    .btnMenu{
+        right: 7rem;
+    }
+
+    .imgLogo{
+        width: 5rem;
+    }
+
+    .preguntas{
+        margin: 5rem 2rem;
+    }
+
+    .pregunta1, .pregunta2{
+        font-size: 1.6rem;
+    }
+
+    .parrafoPregunta{
+        font-size: 1.65rem;
+    }
+    
+    .pQueEsNovela_show{
+        height: 34rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .header{
+        padding: 1rem .5rem;
+    }
+
+    .btnMenu{
+        right: 5rem;
+    }
+
+    .Ltitulo{
+        margin-top: 50rem;
+    }
+
+    .btnFlechaIzq{
+        left: 3%;
+        padding: .5rem;
+    }
+    .btnFlechaDer{
+        right: 3%;
+        padding: .5rem;
+    }
+
+    .pQueEsNovela_show{
+        height: 39.5rem;
+    }
 }
