@@ -56,8 +56,9 @@ html{
 }
 
 .capitulos{
-    display: grid;
-    grid-template-columns: max-content 85%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
     gap: 4em;
 }
 
@@ -94,9 +95,7 @@ html{
 }
 
 .linkcc:hover{
-    border-bottom: 1px solid var(--color_amarillo);
-    transition: border-bottom .5s ease-in ;
-    
+    font-size: 2.3rem;
 }
 
 .cc1-3,.cc4-6,.cc7-9{
@@ -138,12 +137,29 @@ html{
         margin-top: 3rem;
     }
 
+    .listaCap{
+        margin: 1rem 2rem;
+    }
+
     .capitulos{
-        grid-auto-flow: column;
+        margin-bottom: 18rem;
         gap: 2em;
     }
 
     .btnCap{
-        display: inline-block;
+        display: inline;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .ct{
+        font-size: 2.4rem;
+    }
+    .linkcc{
+        font-size: 1.8rem;
+    }
+
+    .linkcc:hover{
+        font-size: 1.9rem;
     }
 }
