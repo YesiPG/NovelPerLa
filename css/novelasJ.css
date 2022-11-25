@@ -112,6 +112,11 @@ html{
     transition: opacity 1s ease-in-out;
 }
 
+.btnCap_show{
+    opacity: 0;
+    pointer-events: none;
+}
+
 /* -------------------------------------|  RESPONSIVE  |-------------------------------- */
 
 @media screen and (max-width: 800px){
