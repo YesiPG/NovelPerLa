@@ -1,10 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
+:root{
+    --titulo: 'Playfair Display', serif;
+    --parrafo: 'Cormorant Garamond', serif;
+    --color_Azul: #4abdac;
+    --color_naranja: #fc4a1a;
+    --color_amarillo: #f7b733;
+    --color_plateado: #dfdce3;
+    --color_blanco: #fff;
+    --color_gris: #444;
+    --color_negro: #000;
+    --fontSize_titulo: 3.3rem;
+    --margin_titulo: 5rem 0;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
 .mainJ{
     padding: 8rem 2rem;
 }
 
+.contDescrision{
+    display: grid;
+    grid-auto-flow: row;
+    margin: 1rem 20rem;
+    gap: 2em;
+}
+
+.imgD{
+    max-width: 100%;
+    width: 30rem;
+    margin: auto;
+}
+
+.listaCap{
+    display: grid;
+    grid-auto-flow: row;
+    margin: 1rem 4rem;
+    margin-top: 5rem;
+    gap: 2em;
+}
+
+.capitulos{
+    display: grid;
+    grid-template-columns: max-content 85%;
+    gap: 4em;
+}
+
+.btnCap{
+    display: block;
+    margin: 2rem 0;
+    padding: .5rem 2rem;
+    font-family: var(--parrafo);
+    font-size: 1.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.btnCap:hover{
+    background-color: var(--color_amarillo);
+    transition: background-color .5s ease;
+}
+
+.ct{
+    font-family: var(--parrafo);
+    font-size: 2.7rem;
+    color: var(--color_amarillo);
+    margin-bottom: .5rem;
+}
+
+.linkcc{
+    display: inline-block;
+    font-family: var(--parrafo);
+    font-size: 2.2rem;
+    color: var(--color_negro);
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.linkcc:hover{
+    border-bottom: 1px solid var(--color_amarillo);
+    transition: border-bottom .5s ease-in ;
+    
+}
+
+.cc1-3,.cc4-6,.cc7-9{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+}
+
+/* ---------------------------------- |  SHOW  | ----------------------------- */
+.cap_show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 1s ease-in-out;
+}
+
+/* -------------------------------------|  RESPONSIVE  |-------------------------------- */
+
 @media screen and (max-width: 800px){
     .Jtitulo{
         margin-top: 5rem;
+    }
+
+    .contDescrision{  
+        margin: 1rem 10rem;
+    }
+
+    .subTitulo{
+        margin-top: 4rem;
+    }
+}
+@media screen and (max-width: 600px){
+
+    .contDescrision{  
+        margin: 1rem 2rem;
+    }
+
+    .subTitulo{
+        margin-top: 3rem;
+    }
+
+    .capitulos{
+        grid-auto-flow: column;
+        gap: 2em;
+    }
+
+    .btnCap{
+        display: inline-block;
     }
 }
