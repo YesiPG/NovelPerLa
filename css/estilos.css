@@ -597,7 +597,7 @@ html{
         top: 7rem;
     }
     .Ltitulo{
-        margin-top: 41rem;
+        margin-top: 48rem;
     }
 
     .imgLogo{
@@ -638,7 +638,7 @@ html{
 @media screen and (max-width: 350px){
 
     .Ltitulo{
-        margin-top: 46rem;
+        margin-top: 55rem;
     }
 
     .pQueEsNovela_show{
