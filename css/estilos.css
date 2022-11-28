@@ -591,6 +591,7 @@ html{
 }
 
 @media screen and (max-width: 350px){
+
     .header{
         padding: 1rem .5rem;
     }
@@ -637,4 +638,5 @@ html{
         right: 1rem;
         padding: .2rem;
     }
+    
 }
