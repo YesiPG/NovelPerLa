@@ -26,6 +26,7 @@
 html{
     font-size: 10px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* -------------------------------|  BARRA DE NAVEGACIÓN  |------------------------- */
@@ -497,28 +498,38 @@ html{
         margin: auto;
     }
 
-.btnFlechaIzq,.btnFlechaDer{
-    top: 55rem;
-}
+    .btnFlechaIzq,.btnFlechaDer{
+        top: 55rem;
+    }
 
-.Ltitulo{
-    margin-top: 40rem;
-}
+    .Ltitulo{
+        margin-top: 40rem;
+    }
 
-.listaCard{
-    width: 30rem;
-    height: 37rem;
-}
+    .listaCard{
+        width: 30rem;
+        height: 37rem;
+    }
 
-.pregunta1, .pregunta2{
-    font-size: 1.7rem;
-}
-.pQueEsNovela_show{
-    height: 26rem;
+    .pregunta1, .pregunta2{
+        font-size: 1.7rem;
+    }
+    .pQueEsNovela_show{
+        height: 26rem;
+    }
 }
 
 
 @media screen and (max-width: 600px){
+    .header{
+        padding: 1rem 2rem;
+    }
+    .contNav{
+        width: 100%;
+    }
+    .btnMenu{
+        right: 7rem;
+    }
     .nPgenero,.nPidioma,.nPsinopsis{
         font-size: 1.8rem;
     }
@@ -539,7 +550,7 @@ html{
     
 
     .Ltitulo{
-        margin-top: 47rem;
+        margin-top: 30rem;
     }
 
     .btnFlechaIzq{
@@ -554,19 +565,39 @@ html{
     }
 
     .pQueEsNovela_show{
-        height: 30rem;
+        height: 33rem;
     }
 
 }
 
-
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
+    .Ltitulo{
+        margin-top: 34rem;
+    }
     .header{
-        padding: 1rem 2rem;
+        padding: 1rem .5rem;
     }
 
     .btnMenu{
-        right: 7rem;
+        right: 5rem;
+    }
+    .btnFlechaIzq{
+        left: 3%;
+        padding: .5rem;
+    }
+    .btnFlechaDer{
+        right: 3%;
+        padding: .5rem;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .contNav{
+        top: 7rem;
+    }
+    .Ltitulo{
+        margin-top: 39rem;
     }
 
     .imgLogo{
@@ -586,41 +617,10 @@ html{
     }
     
     .pQueEsNovela_show{
-        height: 34rem;
-    }
-}
-
-@media screen and (max-width: 350px){
-
-    .header{
-        padding: 1rem .5rem;
+        height: 37rem;
     }
 
-    .btnMenu{
-        right: 5rem;
-    }
-
-    .contNav{
-        top: 7rem;
-    }
-
-    .Ltitulo{
-        margin-top: 50rem;
-    }
-
-    .btnFlechaIzq{
-        left: 3%;
-        padding: .5rem;
-    }
-    .btnFlechaDer{
-        right: 3%;
-        padding: .5rem;
-    }
-
-    .pQueEsNovela_show{
-        height: 41rem;
-    }
-
+    
     @keyframes moverImgLogo {
         from{
             transform: translateX(0);
@@ -633,6 +633,19 @@ html{
             -o-transform: translateX(18rem);
         }
     }
+}
+
+@media screen and (max-width: 350px){
+
+    .Ltitulo{
+        margin-top: 45rem;
+    }
+
+    .pQueEsNovela_show{
+        height: 42rem;
+    }
+
+   
 
     .btnPregunta1,.btnPregunta2{
         right: 1rem;
