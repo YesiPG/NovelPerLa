@@ -320,17 +320,12 @@ html{
     right: 2rem;
     bottom: 2rem;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: var(--color_amarillo);
     border-radius: 50%;
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
     z-index: 800;
-}
-
-.btnFlechaUp:hover{
-    background-color: var(--color_amarillo);
-    transition: background-color 1s ease;
 }
 
 /* ----------------------------------|  PREGUNTAS  |--------------------------------- */
@@ -604,6 +599,10 @@ html{
         right: 5rem;
     }
 
+    .contNav{
+        top: 7rem;
+    }
+
     .Ltitulo{
         margin-top: 50rem;
     }
@@ -619,5 +618,23 @@ html{
 
     .pQueEsNovela_show{
         height: 39.5rem;
+    }
+
+    @keyframes moverImgLogo {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(18rem);
+            -webkit-transform: translateX(18rem);
+            -moz-transform: translateX(18rem);
+            -ms-transform: translateX(18rem);
+            -o-transform: translateX(18rem);
+}
+    }
+
+    .btnPregunta1,.btnPregunta2{
+        right: 1rem;
+        padding: .2rem;
     }
 }
