@@ -497,26 +497,26 @@ html{
         margin: auto;
     }
 
-    .btnFlechaIzq,.btnFlechaDer{
-        top: 55rem;
-    }
-
-    .Ltitulo{
-        margin-top: 40rem;
-    }
-
-    .listaCard{
-        width: 30rem;
-        height: 37rem;
-    }
-
-    .pregunta1, .pregunta2{
-        font-size: 1.7rem;
-    }
-    .pQueEsNovela_show{
-        height: 26rem;
-    }
+.btnFlechaIzq,.btnFlechaDer{
+    top: 55rem;
 }
+
+.Ltitulo{
+    margin-top: 40rem;
+}
+
+.listaCard{
+    width: 30rem;
+    height: 37rem;
+}
+
+.pregunta1, .pregunta2{
+    font-size: 1.7rem;
+}
+.pQueEsNovela_show{
+    height: 26rem;
+}
+
 
 @media screen and (max-width: 600px){
     .nPgenero,.nPidioma,.nPsinopsis{
@@ -617,7 +617,7 @@ html{
     }
 
     .pQueEsNovela_show{
-        height: 39.5rem;
+        height: 41rem;
     }
 
     @keyframes moverImgLogo {
@@ -630,7 +630,7 @@ html{
             -moz-transform: translateX(18rem);
             -ms-transform: translateX(18rem);
             -o-transform: translateX(18rem);
-}
+        }
     }
 
     .btnPregunta1,.btnPregunta2{
