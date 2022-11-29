@@ -143,11 +143,11 @@ html{
     }
 
     .listaCap{
-        margin: 1rem 2rem;
+        margin: 2rem 2rem;
     }
 
     .capitulos{
-        margin-bottom: 18rem;
+        margin-bottom: 38rem;
         gap: 2em;
     }
 
@@ -158,7 +158,7 @@ html{
     }
 
     .ct{
-        font-size: 2.4rem;
+        font-size: 2.3rem;
     }
     .linkcc{
         font-size: 1.8rem;
