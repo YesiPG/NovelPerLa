@@ -1,8 +1,9 @@
 <h1 align="center">NovelPerLa</h1>
-
-Esta es una pagina web sobre novelas ligeras japonesas, coreanas y chinas, en donde encontraremos los detalles como: nombre, genero, idioma y su respectiva sinopsis.
-
-La pagina es completamente responsiva, tiene la opción de poner la pagina en modo oscuro.
+<br>
+<p>
+  ¡Bienvenido/a a nuestra plataforma dedicada a las novelas ligeras japonesas, coreanas y chinas! Sumérgete en un universo de historias emocionantes y cautivadoras que te transportarán a mundos llenos de aventura, romance y fantasía.
+</p>
+<br><br>
 
 ![img1 pagina](images/screen1.png)
 ![img2 pagina](images/screen2.png)
